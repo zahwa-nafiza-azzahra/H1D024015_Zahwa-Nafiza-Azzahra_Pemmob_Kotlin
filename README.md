@@ -34,8 +34,6 @@ Aplikasi ini merupakan aplikasi mobile Android berbasis **Jetpack Compose** (Kot
 
 Berikut adalah tangkapan layar (*screenshot*) hasil implementasi antarmuka aplikasi:
 
-### 1. Halaman Tentang Jualan
-![Halaman Tentang Jualan](img/tentang_jualan.png)
-
-### 2. Halaman Hubungi Kami
-![Halaman Hubungi Kami](img/hubungi_kami.png)
+| 1. Halaman Tentang Jualan | 2. Halaman Hubungi Kami |
+| :---: | :---: |
+| <img src="img/tentang_jualan.png" width="300" alt="Halaman Tentang Jualan" /> | <img src="img/hubungi_kami.png" width="300" alt="Halaman Hubungi Kami" /> |

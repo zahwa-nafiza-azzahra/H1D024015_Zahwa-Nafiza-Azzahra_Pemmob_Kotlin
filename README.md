@@ -1,39 +1,78 @@
 # Praktikum Pemrograman Mobile - Aplikasi Jualan
 
-## Data Diri
-
-* **Nama**: Zahwa Nafiza Azzahra
-* **NIM**: H1D024015
-* **Shift KRS**: H
-* **Shift Sekarang**: F
+Aplikasi **Jualan** adalah platform berbasis **Android (Jetpack Compose / Kotlin)** yang dirancang untuk mempromosikan dan memadahi produk-produk lokal UMKM di wilayah Kabupaten Purbalingga, Jawa Tengah.
 
 ---
 
-## Penjelasan Program
+## 👤 Data Diri
 
-Aplikasi ini merupakan aplikasi mobile Android berbasis **Jetpack Compose** (Kotlin) yang dibuat untuk memenuhi tugas Praktikum Pemrograman Mobile. Aplikasi **Jualan** adalah platform yang mewadahi serta mempromosikan produk-produk lokal UMKM di wilayah Kabupaten Purbalingga, Jawa Tengah.
-
-### Fitur dan Halaman Aplikasi:
-
-1. **Halaman Tentang Jualan (`BasicInfoScreen`)**:
-   * **Logo Aplikasi**: Menampilkan logo lingkaran resmi aplikasi Jualan.
-   * **Judul**: Menampilkan teks *"Tentang Jualan"* dengan tipografi tebal dan rapi.
-   * **Card Deskripsi Platform**: Card bernuansa hijau (*Primary*) yang menjelaskan profil aplikasi dalam mewadahi UMKM lokal Purbalingga.
-   * **Card Misi Kami**: Card bernuansa hijau tua/teal (*Tertiary*) dengan penegasan komitmen *"Misi Kami: Memajukan UMKM Lokal"*.
-   * **Tombol Navigasi**: Tombol *"Hubungi Kami"* di bagian bawah untuk berpindah ke halaman form pesan.
-
-2. **Halaman Hubungi Kami (`HubungiKamiScreen`)**:
-   * **Top App Bar**: Dilengkapi tombol kembali (*Back button*) untuk memudahkan navigasi antar halaman.
-   * **Input Email**: Menggunakan `OutlinedTextField` lengkap dengan ikon email untuk memasukkan alamat email pengirim.
-   * **Input Pesan**: Menggunakan `OutlinedTextField` area teks untuk menulis isi pesan atau pertanyaan.
-   * **Tombol Kirim Pesan**: Tombol interaktif dengan ikon kirim (*Send*) yang memicu tampilan notifikasi **Snackbar** (*"Pesan Terkirim"*).
+| Informasi | Detail |
+| :--- | :--- |
+| **Nama** | Zahwa Nafiza Azzahra |
+| **NIM** | H1D024015 |
+| **Shift KRS** | H |
+| **Shift Sekarang** | F |
 
 ---
 
-## Hasil Projek
+## 📱 Fitur dan Halaman Aplikasi
 
-Berikut adalah tangkapan layar (*screenshot*) hasil implementasi antarmuka aplikasi:
+### 1. Halaman Tentang Jualan (`BasicInfoScreen`)
+* **Logo Aplikasi**: Menampilkan logo resmi platform Jualan.
+* **Informasi & Misi**: Card deskripsi profil aplikasi dan komitmen memajukan UMKM lokal Purbalingga.
+* **Navigasi**: Tombol *"Hubungi Kami"* untuk berpindah ke halaman formulir kontak.
+
+### 2. Halaman Hubungi Kami (`HubungiKamiScreen`)
+* **Top App Bar**: Dilengkapi tombol *Back* untuk kembali ke halaman utama.
+* **Formulir Kontak**: Field input Email dan Pesan menggunakan `OutlinedTextField`.
+* **Kirim Pesan & Feedback**: Tombol kirim interaktif yang memicu tampilan notifikasi **Snackbar** (*"Pesan Terkirim"*).
+
+### 3. Halaman Daftar Produk UMKM (`DaftarProductScreen`) — *Tugas Pertemuan 2*
+* **Filter Kategori (`LazyRow`)**: Menampilkan daftar kategori interaktif (*Makanan*, *Minuman*, *Kerajinan*) untuk memfilter produk secara real-time.
+* **Grid Produk (`LazyVerticalGrid`)**: Layout grid 2 kolom menampilkan `ProductItemCard` berisi gambar, badge kategori, nama produk, dan harga.
+* **Event Handling (Toast)**: Klik pada kartu produk memunculkan notifikasi **Toast** sesuai produk yang dipilih (contoh: *"Clicked: Sandal Bandol"*).
+* **Dukungan Dual Theme**: Antarmuka mendukung tampilan **Light Theme** maupun **Dark Theme** secara responsif dan konsisten.
+* **Modular Preview**: Preview komponen terpisah (`ProductItemCard`, `CategoryItem`) serta preview layar penuh untuk tema terang dan gelap.
+
+---
+
+## 📸 Hasil Implementasi (Screenshot)
+
+### 📌 Pertemuan 1: Layar Informasi & Formulir Kontak
 
 | 1. Halaman Tentang Jualan | 2. Halaman Hubungi Kami |
 | :---: | :---: |
-| <img src="img/tentang_jualan.png" width="300" alt="Halaman Tentang Jualan" /> | <img src="img/hubungi_kami.png" width="300" alt="Halaman Hubungi Kami" /> |
+| <img src="img/tentang_jualan.png" width="280" alt="Tentang Jualan" /> | <img src="img/hubungi_kami.png" width="280" alt="Hubungi Kami" /> |
+
+---
+
+### 📌 Pertemuan 2: Daftar Produk UMKM (Light Mode)
+
+| Filter Makanan | Filter Minuman | Filter Kerajinan | Interaksi Click (Toast) |
+| :---: | :---: | :---: | :---: |
+| <img src="img/daftar_produk_makanan.png" width="220" alt="Filter Makanan" /> | <img src="img/daftar_produk_minuman.png" width="220" alt="Filter Minuman" /> | <img src="img/daftar_produk_kerajinan.png" width="220" alt="Filter Kerajinan" /> | <img src="img/daftar_produk_toast.png" width="220" alt="Toast Sandal Bandol" /> |
+
+---
+
+### 📌 Pertemuan 2: Daftar Produk UMKM (Dark Mode)
+
+| Filter Makanan (Dark) | Filter Minuman (Dark) | Filter Kerajinan (Dark) | Interaksi Click (Dark) |
+| :---: | :---: | :---: | :---: |
+| <img src="img/dark_makanan.png" width="220" alt="Dark Makanan" /> | <img src="img/dark_minuman.png" width="220" alt="Dark Minuman" /> | <img src="img/dark_kerajinan.png" width="220" alt="Dark Kerajinan" /> | <img src="img/dark_toast.png" width="220" alt="Dark Toast" /> |
+
+---
+
+### 📌 Component & Layout Preview
+
+| Preview `ProductItemCard` | Preview `CategoryItem` |
+| :---: | :---: |
+| <img src="img/preview_product_card.png" width="250" alt="Preview ProductItemCard" /> | <img src="img/preview_category_item.png" width="250" alt="Preview CategoryItem" /> |
+
+---
+
+## 🛠️ Teknologi & Komponen yang Digunakan
+
+* **Bahasa**: Kotlin
+* **UI Framework**: Jetpack Compose (Material3)
+* **Navigasi**: Jetpack Navigation Compose
+* **Komponen Compose**: `Scaffold`, `TopAppBar`, `LazyRow`, `LazyVerticalGrid`, `Card`, `OutlinedTextField`, `Toast`, `Snackbar`

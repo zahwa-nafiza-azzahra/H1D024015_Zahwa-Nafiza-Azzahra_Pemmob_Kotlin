@@ -16,3 +16,4 @@ local.properties
 .idea/
 app/build/
 TugasPertemuan1/
+*.log

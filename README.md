@@ -44,6 +44,13 @@ Aplikasi **Jualan** adalah platform berbasis **Android (Jetpack Compose / Kotlin
 * **Informasi Produk Lengkap**: Menampilkan gambar produk, nama, harga, deskripsi, dan sisa stok.
 * **Tombol Tambah ke Keranjang**: Interaksi `Button` dengan notifikasi Toast confirmation jumlah item yang dibeli.
 
+### 5. Networking & Architecture — *Pertemuan 5*
+* **Retrofit**: Pengambilan data produk dan kategori dari REST API menggunakan Retrofit2 + GsonConverter.
+* **Coil (`AsyncImage`)**: Pemuatan gambar produk dari URL secara asinkron menggunakan library Coil.
+* **ViewModel & StateFlow**: Arsitektur MVVM dengan `ProductViewModel` dan `ProductUiState` (Loading / Success / Error) untuk manajemen state UI.
+* **Label Kategori di Detail Produk**: Menampilkan chip kategori produk (contoh: *Makanan*, *Minuman*, *Kerajinan*) di halaman detail.
+* **INTERNET Permission**: Penambahan izin akses internet pada `AndroidManifest.xml`.
+
 ---
 
 ## 📸 Hasil Implementasi (Screenshot)
@@ -104,6 +111,14 @@ Aplikasi **Jualan** adalah platform berbasis **Android (Jetpack Compose / Kotlin
 
 ---
 
+### 📌 Pertemuan 5: Networking & Architecture (Retrofit + Coil + ViewModel)
+
+| Daftar Produk (API) | Detail Produk + Label Kategori (API) |
+| :---: | :---: |
+| <img src="img/Screenshot_20260930_111539.png" width="280" alt="Daftar Produk dari API" /> | <img src="img/Screenshot_20260930_111840.png" width="280" alt="Detail Produk dari API dengan Label Kategori" /> |
+
+---
+
 ### 📌 Component & Layout Preview
 
 | Preview `ProductItemCard` | Preview `CategoryItem` |
@@ -117,6 +132,9 @@ Aplikasi **Jualan** adalah platform berbasis **Android (Jetpack Compose / Kotlin
 * **Bahasa**: Kotlin
 * **UI Framework**: Jetpack Compose (Material3)
 * **Navigasi**: Jetpack Navigation Compose
+* **Networking**: Retrofit2 + Gson Converter
+* **Image Loading**: Coil (`AsyncImage`)
+* **Architecture**: MVVM (`ViewModel`, `StateFlow`, `collectAsState`)
 * **State & Lifecycle Management**: `remember`, `rememberSaveable`, `mutableStateOf`, `LaunchedEffect`
 * **Media & Photo Picker**: `ActivityResultContracts.PickVisualMedia`
-* **Komponen Compose**: `Scaffold`, `TopAppBar`, `ExposedDropdownMenuBox`, `LazyRow`, `LazyVerticalGrid`, `Card`, `OutlinedTextField`, `Button`, `OutlinedButton`, `Checkbox`, `CircularProgressIndicator`, `Toast`, `Snackbar`
+* **Komponen Compose**: `Scaffold`, `TopAppBar`, `ExposedDropdownMenuBox`, `LazyRow`, `LazyVerticalGrid`, `Card`, `OutlinedTextField`, `Button`, `OutlinedButton`, `Checkbox`, `CircularProgressIndicator`, `SuggestionChip`, `Toast`, `Snackbar`
